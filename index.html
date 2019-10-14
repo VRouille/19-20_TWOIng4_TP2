@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/> <!--permet d'eviter que l'utilisateur zoom dans votre page web pour naviguer-->
 	</head>
 	<body>
 		<header>
@@ -24,7 +24,11 @@
 					</div>
 					<div class="col-sm-7">
 						<div class="user">
-						    <a href="#">Luke Chesser</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Luke Chesser</a>
+							<div class="dropdown-menu">
+    							<a class="dropdown-item" href="#">Edit my profile</a>
+    							<a class="dropdown-item" href="#">Logout</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -72,7 +76,7 @@
 									<span>6 Followers</span>
 									<span>13 Following</span>
 								</section>
-								<div class="links ml-auto d-inline-block">
+								<div class="links ml-auto d-block">
 									<div>
 										<a href="#">Collection</a>
 										<a href="#">History</a>
